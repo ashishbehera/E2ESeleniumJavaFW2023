@@ -21,7 +21,7 @@ public class EcomErrorValTest extends BaseTest {
 
 	@Test(groups = {"ErrorHandling"}, retryAnalyzer = Retry.class)
 	public void loginValidation() throws IOException {
-		String errMsg = "Incorrect email password.";
+		String errMsg = "Incorrect email or password.";
 		lp.loginApplication("ash110uce@gmail.com", "Ashmit@123457");
 		Assert.assertEquals(errMsg, lp.getErrorMessage());
 
