@@ -34,7 +34,7 @@
 		</build>
 		</profile>
 		<profile>
-		<id>ErrorTest</id>
+		<id>ErrorValidation</id>
 		<build>
 			<plugins>
 				<plugin>
