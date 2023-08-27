@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -45,6 +46,7 @@ public class BaseTest {
 			if(browserName.contains("headless"))
 			options.addArguments("headless");
 			driver = new ChromeDriver(options);
+			driver.manage().window().setSize( new Dimension(1440,900));
 		} else if (browserName.equalsIgnoreCase("firefox")) {
 			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+ "//driver//geckodriver");
 			driver = new FirefoxDriver();
