@@ -1,1 +1,1 @@
-# SeleniumJavaFW2023
+# E2ESeleniumJavaFW2023
